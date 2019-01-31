@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites'
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -148,6 +148,8 @@ LOCAL_APPS = [
     'home',
 ]
 THIRD_PARTY_APPS = [
+    'sortedm2m',
+    'photologue',
     'rest_framework',
     'rest_framework.authtoken',
     'bootstrap4',
@@ -174,3 +176,4 @@ EMAIL_HOST_USER = env.str("SENDGRID_USERNAME", "")
 EMAIL_HOST_PASSWORD = env.str("SENDGRID_PASSWORD", "")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
