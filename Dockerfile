@@ -7,6 +7,7 @@ RUN apk add --no-cache --update \
   zlib-dev \
   bash \
   gcc \
+  build-base \
   musl-dev \
   postgresql-dev \
   python3 \
